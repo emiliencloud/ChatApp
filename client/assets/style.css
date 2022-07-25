@@ -1,0 +1,195 @@
+/* Style Global */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+	--primary-color : #573EA0;
+	--like-color : #E7228C;
+
+	--background-color: #EBE9F0;
+	--text-color : #362C46;
+	--font : 'Rubik', sans-serif;
+
+	--header-height : 6rem;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--font);	
+}
+
+html, body {
+	height:100%;
+	overflow: hidden !important;
+}
+
+body {
+	background: var(--primary-color);
+}
+
+button {
+	cursor: pointer;
+}
+
+#open-nav {
+	display: none;
+}
+
+#open-game-menu{
+	display: none;
+}
+
+/* Style Header */
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 1rem 2rem;
+
+	box-shadow: 0px 5px 5px 0px rgba(54,44,70,0.59);
+
+	color: white;
+}
+
+.header>h1 {
+	font-size: 1.5rem;
+	padding: .75rem 0rem;
+}
+
+.header-menu {
+	display: flex;
+}
+
+.header-menu>button>i {
+	color: white;
+	margin: 0 .5rem 0 0;
+}
+
+.header-menu>button {
+	border: none;
+	padding: .5em;
+	font-size: 1.25rem;
+
+	border-radius: 1rem;
+	background: #6d5ca1;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: white;
+	margin: 0 0 0 2rem;
+
+	transition: .25s;
+}
+
+.header-menu>button:hover {
+    box-shadow: -6px 7px 0px 0px rgba(255, 255, 255, 0.7);
+    transform: translate(6px, -7px);
+}
+
+.header-menu>button:active {
+    box-shadow: none;
+    transform: none;
+}
+
+.header-btn-jeux{
+	display: none !important;
+}
+
+#dropzone {
+	display: none !important;
+}
+
+#features{
+	display: none;
+	position: absolute;
+	background: #6d5ca1;
+	border-radius: 1rem;
+	color: white;
+	padding: 1.5rem;
+	right: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20%;
+}
+
+.display-features {
+	display: block !important;
+}
+
+.responsive-nav {
+	display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+	.menu-burger {
+		display: block;
+	}
+
+	.btn-burger {
+		font-size: 2rem;
+		background-color: transparent;
+		border: none;
+		color: white;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	
+		padding: 1rem 2rem;
+	
+		box-shadow: none;
+	
+		color: white;
+	}
+	
+	.header>h1 {
+		font-size: 1.5rem;
+		padding: .75rem 0rem;
+	}
+	
+	.header-menu {
+		display: flex;
+	}
+	
+	.header-menu>button>i {
+		color: white;
+		margin: 0 .5rem 0 0;
+	}
+	
+	.header-menu>button {
+		border: none;
+		padding: .5em;
+		font-size: 1.25rem;
+	
+		border-radius: 1rem;
+		background: #6d5ca1;
+	
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		color: white;
+		margin: 0 0 0 2rem;
+
+		display: none;
+	}
+	
+	.header-btn-jeux{
+		display: none !important;
+	}
+	
+	#dropzone {
+		display: none !important;
+	}
+	
+	#features{
+		display: none;
+	}
+}
